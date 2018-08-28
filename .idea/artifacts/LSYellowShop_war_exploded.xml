@@ -1,0 +1,25 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="LSYellowShop:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/LSYellowShop_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Shop" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$USER_HOME$/Documents/UserJar/labeldatabase/jstl.jar" />
+          <element id="file-copy" path="$USER_HOME$/Documents/UserJar/labeldatabase/standard.jar" />
+          <element id="file-copy" path="$USER_HOME$/Documents/UserJar/C3P0/c3p0-0.9.1.2.jar" />
+          <element id="file-copy" path="$USER_HOME$/Documents/UserJar/dbcp/commons-dbcp2-2.1.jar" />
+          <element id="file-copy" path="$USER_HOME$/Documents/UserJar/dbcp/commons-pool2-2.3.jar" />
+          <element id="file-copy" path="$USER_HOME$/Documents/UserJar/mysql/mysql-connector-java-5.1.46.jar" />
+          <element id="file-copy" path="$USER_HOME$/Documents/UserJar/org-gson/json_simple-1.1.jar" />
+          <element id="file-copy" path="$USER_HOME$/Documents/UserJar/goole-gson/gson-2.2.4.jar" />
+          <element id="file-copy" path="$USER_HOME$/Documents/UserJar/commons/commons-fileupload-1.2.2.jar" />
+          <element id="file-copy" path="$USER_HOME$/Documents/UserJar/commons/commons-io-2.2.jar" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="Shop/web/Web" />
+    </root>
+  </artifact>
+</component>
