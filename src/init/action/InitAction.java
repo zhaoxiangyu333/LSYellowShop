@@ -6,6 +6,7 @@ import brand.vo.Brand;
 import discount.servlet.DiscountServlet;
 import good.servlet.GoodServlet;
 import good.vo.Good;
+import init.recommend.dao.RecommendDao;
 import init.servlet.UserServlet;
 import init.vo.User;
 import pro.vo.Pro;
@@ -57,6 +58,7 @@ public class InitAction extends HttpServlet {
         this.getServletContext().setAttribute("coomentMap", coomentMap);
         // 商品类别
         this.getServletContext().setAttribute("pros", pros);
+
     }
 
     @Override
@@ -81,7 +83,6 @@ public class InitAction extends HttpServlet {
             } else if (type.equals("previous")) {
                 page.setCurrentPage(page.getCurrentPage() - 1);
             }
-
         }
 
         servlet3.queryAllGoods(page,null);

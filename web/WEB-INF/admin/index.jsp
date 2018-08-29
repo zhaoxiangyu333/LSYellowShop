@@ -31,7 +31,8 @@
         <ul class="am-nav am-nav-pills am-topbar-nav admin-header-list">
 
             <li class="am-dropdown tognzhi" data-am-dropdown>
-                <button class="am-btn am-btn-primary am-dropdown-toggle am-btn-xs am-radius am-icon-bell-o" data-am-dropdown-toggle> 消息管理<span class="am-badge am-badge-danger am-round">6</span></button>
+                <button class="am-btn am-btn-primary am-dropdown-toggle am-btn-xs am-radius am-icon-bell-o"
+                        data-am-dropdown-toggle> 消息管理<span class="am-badge am-badge-danger am-round">6</span></button>
                 <ul class="am-dropdown-content">
                     <li class="am-dropdown-header">所有消息都在这里</li>
                     <li><a href="#">未激活会员 <span class="am-badge am-badge-danger am-round">556</span></a></li>
@@ -69,7 +70,8 @@
             </li>
 
 
-            <li class="am-hide-sm-only" style="float: right;"><a href="javascript:;" id="admin-fullscreen"><span class="am-icon-arrows-alt"></span> <span class="admin-fullText">开启全屏</span></a></li>
+            <li class="am-hide-sm-only" style="float: right;"><a href="javascript:;" id="admin-fullscreen"><span
+                    class="am-icon-arrows-alt"></span> <span class="admin-fullText">开启全屏</span></a></li>
         </ul>
     </div>
 </header>
@@ -109,7 +111,7 @@
             </ul>
             <h3 class="am-icon-gears"><em></em> <a href="#">系统设置</a></h3>
             <ul>
-                <li>数据备份</li>
+                <li id="updateRecommend">更新商品推荐</li>
                 <li>邮件/短信管理</li>
                 <li>上传/下载</li>
                 <li>权限</li>
@@ -213,6 +215,22 @@
     // 使用刚指定的配置项和数据显示图表。
     myChart.setOption(option);
 
+</script>
+
+<script>
+    $(function () {
+        $("#updateRecommend").click(
+            function () {
+                $.ajax({
+                    type: "post",
+                    url: "${pageContext.request.contextPath}/AdminRecommendAction",
+                    success: function () {
+
+                    }
+                });
+            }
+        );
+    });
 </script>
 </body>
 </html>

@@ -61,19 +61,22 @@
                                             <div class="widget-inner">
                                                 <ul id="menu-my-account" class="menu">
                                                     <li class="menu-my-account">
-                                                        <a class="item-link" href="${pageContext.request.contextPath}/UserInitMyAccountAction">
+                                                        <a class="item-link"
+                                                           href="${pageContext.request.contextPath}/UserInitMyAccountAction">
                                                             <span class="menu-title">我的账户</span>
                                                         </a>
                                                     </li>
 
                                                     <li class="menu-cart">
-                                                        <a class="item-link" href="${pageContext.request.contextPath}/CartInitAction">
+                                                        <a class="item-link"
+                                                           href="${pageContext.request.contextPath}/CartInitAction">
                                                             <span class="menu-title">购物车</span>
                                                         </a>
                                                     </li>
 
                                                     <li class="menu-checkout">
-                                                        <a class="item-link" href="${pageContext.request.contextPath}/SkipCheckoutAction">
+                                                        <a class="item-link"
+                                                           href="${pageContext.request.contextPath}/SkipCheckoutAction">
                                                             <span class="menu-title">收银台</span>
                                                         </a>
                                                     </li>
@@ -84,7 +87,8 @@
                                                         </a>
                                                     </li>
                                                     <li class="menu-wishlist">
-                                                        <a href="${pageContext.request.contextPath}/SkipLoginIndexAction" class="item-link">
+                                                        <a href="${pageContext.request.contextPath}/SkipLoginIndexAction"
+                                                           class="item-link">
                                                             <span>登录</span>
                                                         </a>
                                                     </li>
@@ -99,7 +103,8 @@
                                         <div class="widget-inner">
                                             <ul id="menu-checkout" class="menu">
                                                 <li class="menu-checkout">
-                                                    <a class="item-link" href="${pageContext.request.contextPath}/SkipCheckoutAction">
+                                                    <a class="item-link"
+                                                       href="${pageContext.request.contextPath}/SkipCheckoutAction">
                                                         <span class="menu-title">收银台</span>
                                                     </a>
                                                 </li>
@@ -119,19 +124,22 @@
                                             <div class="widget-inner">
                                                 <ul id="menu-my-account" class="menu">
                                                     <li class="menu-my-account">
-                                                        <a class="item-link" href="${pageContext.request.contextPath}/UserInitMyAccountAction">
+                                                        <a class="item-link"
+                                                           href="${pageContext.request.contextPath}/UserInitMyAccountAction">
                                                             <span class="menu-title">我的账户</span>
                                                         </a>
                                                     </li>
 
                                                     <li class="menu-cart">
-                                                        <a class="item-link" href="${pageContext.request.contextPath}/CartInitAction">
+                                                        <a class="item-link"
+                                                           href="${pageContext.request.contextPath}/CartInitAction">
                                                             <span class="menu-title">购物车</span>
                                                         </a>
                                                     </li>
 
                                                     <li class="menu-checkout">
-                                                        <a class="item-link" href="${pageContext.request.contextPath}/SkipCheckoutAction">
+                                                        <a class="item-link"
+                                                           href="${pageContext.request.contextPath}/SkipCheckoutAction">
                                                             <span class="menu-title">收银台</span>
                                                         </a>
                                                     </li>
@@ -142,7 +150,8 @@
                                                         </a>
                                                     </li>
                                                     <li class="menu-wishlist">
-                                                        <a href="${pageContext.request.contextPath}/LoginOutAction" class="item-link">
+                                                        <a href="${pageContext.request.contextPath}/LoginOutAction"
+                                                           class="item-link">
                                                             <span>退出</span>
                                                         </a>
                                                     </li>
@@ -158,7 +167,8 @@
                                         <div class="widget-inner">
                                             <ul id="menu-checkout" class="menu">
                                                 <li class="menu-checkout">
-                                                    <a class="item-link" href="${pageContext.request.contextPath}/SkipCheckoutAction">
+                                                    <a class="item-link"
+                                                       href="${pageContext.request.contextPath}/SkipCheckoutAction">
                                                         <span class="menu-title">收银台</span>
                                                     </a>
                                                 </li>
@@ -191,9 +201,11 @@
                                     <div class="top-form top-search">
                                         <div class="topsearch-entry">
 
-                                            <form method="get" action="${pageContext.request.contextPath}/QueryGoodsAction">
+                                            <form method="get"
+                                                  action="${pageContext.request.contextPath}/QueryGoodsAction">
                                                 <div>
-                                                    <input type="text" value="" name="queryinfo" placeholder="输入您的关键字...">
+                                                    <input type="text" value="" name="queryinfo"
+                                                           placeholder="输入您的关键字...">
                                                     <div class="cat-wrapper">
                                                         <label class="label-search">
                                                             <select name="search_category" class="s1_option">
@@ -204,7 +216,8 @@
                                                             </select>
                                                         </label>
                                                     </div>
-                                                    <button type="submit" title="Search" class="fa fa-search button-search-pro form-button"></button>
+                                                    <button type="submit" title="Search"
+                                                            class="fa fa-search button-search-pro form-button"></button>
                                                 </div>
                                             </form>
                                         </div>
@@ -226,7 +239,8 @@
                                         <div class="wrapp-minicart">
                                             <div class="minicart-padding">
                                                 <div class="number-item">
-                                                    <span><a href="${pageContext.request.contextPath}/SkipLoginIndexAction">请登录查看购物车</a></span>
+                                                    <span><a
+                                                            href="${pageContext.request.contextPath}/SkipLoginIndexAction">请登录查看购物车</a></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -241,7 +255,8 @@
                                     <div class="top-form top-form-minicart etrostore-minicart pull-right">
                                         <div class="top-minicart-icon pull-right">
                                             <i class="fa fa-shopping-cart"></i>
-                                            <a class="cart-contents" href="${pageContext.request.contextPath}/CartInitAction" title="查看您的购物车">
+                                            <a class="cart-contents"
+                                               href="${pageContext.request.contextPath}/CartInitAction" title="查看您的购物车">
                                                 <span class="minicart-number">${fn:length(orderList)}</span>
                                             </a>
                                         </div>
@@ -255,10 +270,12 @@
                                                 <ul class="minicart-content">
                                                     <c:forEach var="order" items="${orderList}">
                                                         <li>
-                                                            <a href="${pageContext.request.contextPath}/QueryGoodAction?goodName=${order.good.goodsName}" class="product-image">
+                                                            <a href="${pageContext.request.contextPath}/QueryGoodAction?goodName=${order.good.goodsName}"
+                                                               class="product-image">
                                                                 <img width="100" height="100"
                                                                      src="${pageContext.request.contextPath}/${order.good.goodsImage}"
-                                                                     class="attachment-100x100 size-100x100 wp-post-image" alt=""
+                                                                     class="attachment-100x100 size-100x100 wp-post-image"
+                                                                     alt=""
                                                                      sizes="(max-width: 100px) 100vw, 100px"/>
                                                             </a>
 
@@ -285,7 +302,9 @@
                                                                             <span class="fa fa-trash-o"></span>
                                                                         </a>
 
-                                                                        <a class="btn-edit" href="${pageContext.request.contextPath}/CartInitAction" title="查看您的购物车">
+                                                                        <a class="btn-edit"
+                                                                           href="${pageContext.request.contextPath}/CartInitAction"
+                                                                           title="查看您的购物车">
                                                                             <span class="fa fa-pencil"></span>
                                                                         </a>
                                                                     </div>
@@ -300,7 +319,8 @@
                                                 <div class="cart-checkout">
                                                     <div class="cart-links clearfix">
                                                         <div class="cart-link">
-                                                            <a href="${pageContext.request.contextPath}/CartInitAction" title="Cart">查看购物车</a>
+                                                            <a href="${pageContext.request.contextPath}/CartInitAction"
+                                                               title="Cart">查看购物车</a>
                                                         </div>
 
                                                         <div class="checkout-link">
@@ -383,8 +403,10 @@
                                                             <div class="images">
                                                                 <a href="${pageContext.request.contextPath}/${good.goodsImage} "
                                                                    data-rel="prettyPhoto[product-gallery]" class="zoom">
-                                                                    <img width="600" height="600" src="${pageContext.request.contextPath}/${good.goodsImage}"
-                                                                         class="attachment-shop_single size-shop_single" alt=""
+                                                                    <img width="600" height="600"
+                                                                         src="${pageContext.request.contextPath}/${good.goodsImage}"
+                                                                         class="attachment-shop_single size-shop_single"
+                                                                         alt=""
                                                                          sizes="(max-width: 600px) 100vw, 600px">
                                                                 </a>
                                                             </div>
@@ -392,51 +414,64 @@
                                                     </div>
 
                                                     <!-- Thumbnail Slider -->
-                                                    <div class="slider product-responsive-thumbnail" id="product_thumbnail_247">
+                                                    <div class="slider product-responsive-thumbnail"
+                                                         id="product_thumbnail_247">
                                                         <div class="item-thumbnail-product">
                                                             <div class="thumbnail-wrapper">
-                                                                <img width="180" height="180" src="${pageContext.request.contextPath}/${good.goodsImage}"
-                                                                     class="attachment-shop_thumbnail size-shop_thumbnail" alt=""
+                                                                <img width="180" height="180"
+                                                                     src="${pageContext.request.contextPath}/${good.goodsImage}"
+                                                                     class="attachment-shop_thumbnail size-shop_thumbnail"
+                                                                     alt=""
                                                                      sizes="(max-width: 180px) 100vw, 180px">
                                                             </div>
                                                         </div>
 
                                                         <div class="item-thumbnail-product">
                                                             <div class="thumbnail-wrapper">
-                                                                <img width="180" height="180" src="${pageContext.request.contextPath}/${good.goodsImage}"
-                                                                     class="attachment-shop_thumbnail size-shop_thumbnail" alt=""
+                                                                <img width="180" height="180"
+                                                                     src="${pageContext.request.contextPath}/${good.goodsImage}"
+                                                                     class="attachment-shop_thumbnail size-shop_thumbnail"
+                                                                     alt=""
                                                                      sizes="(max-width: 180px) 100vw, 180px">
                                                             </div>
                                                         </div>
 
                                                         <div class="item-thumbnail-product">
                                                             <div class="thumbnail-wrapper">
-                                                                <img width="180" height="180" src="${pageContext.request.contextPath}/${good.goodsImage}"
-                                                                     class="attachment-shop_thumbnail size-shop_thumbnail" alt=""
+                                                                <img width="180" height="180"
+                                                                     src="${pageContext.request.contextPath}/${good.goodsImage}"
+                                                                     class="attachment-shop_thumbnail size-shop_thumbnail"
+                                                                     alt=""
                                                                      sizes="(max-width: 180px) 100vw, 180px">
                                                             </div>
                                                         </div>
 
                                                         <div class="item-thumbnail-product">
                                                             <div class="thumbnail-wrapper">
-                                                                <img width="180" height="180" src="${pageContext.request.contextPath}/${good.goodsImage}"
-                                                                     class="attachment-shop_thumbnail size-shop_thumbnail" alt=""
+                                                                <img width="180" height="180"
+                                                                     src="${pageContext.request.contextPath}/${good.goodsImage}"
+                                                                     class="attachment-shop_thumbnail size-shop_thumbnail"
+                                                                     alt=""
                                                                      sizes="(max-width: 180px) 100vw, 180px">
                                                             </div>
                                                         </div>
 
                                                         <div class="item-thumbnail-product">
                                                             <div class="thumbnail-wrapper">
-                                                                <img width="180" height="180" src="${pageContext.request.contextPath}/${good.goodsImage}"
-                                                                     class="attachment-shop_thumbnail size-shop_thumbnail" alt=""
+                                                                <img width="180" height="180"
+                                                                     src="${pageContext.request.contextPath}/${good.goodsImage}"
+                                                                     class="attachment-shop_thumbnail size-shop_thumbnail"
+                                                                     alt=""
                                                                      sizes="(max-width: 180px) 100vw, 180px">
                                                             </div>
                                                         </div>
 
                                                         <div class="item-thumbnail-product">
                                                             <div class="thumbnail-wrapper">
-                                                                <img width="180" height="180" src="${pageContext.request.contextPath}/${good.goodsImage}"
-                                                                     class="attachment-shop_thumbnail size-shop_thumbnail" alt=""
+                                                                <img width="180" height="180"
+                                                                     src="${pageContext.request.contextPath}/${good.goodsImage}"
+                                                                     class="attachment-shop_thumbnail size-shop_thumbnail"
+                                                                     alt=""
                                                                      sizes="(max-width: 180px) 100vw, 180px">
                                                             </div>
                                                         </div>
@@ -452,13 +487,15 @@
 
                                             <div class="reviews-content">
                                                 <div class="star"></div>
-                                                <a href="#reviews" class="woocommerce-review-link" rel="nofollow"><span class="count">0</span>
+                                                <a href="#reviews" class="woocommerce-review-link" rel="nofollow"><span
+                                                        class="count">0</span>
                                                     评价</a>
                                             </div>
 
                                             <div>
                                                 <p class="price"><span class="woocommerce-Price-amount amount"><span
-                                                        class="woocommerce-Price-currencySymbol">￥</span>${good.goodsPrice}</span></p>
+                                                        class="woocommerce-Price-currencySymbol">￥</span>${good.goodsPrice}</span>
+                                                </p>
                                             </div>
 
                                             <div class="product-info clearfix">
@@ -490,7 +527,8 @@
                                             </div>
 
                                             <button id="addCart" style="width: 100px; height: 50px;
-                                            background-color: rgb(255,160,4); margin-left: -250px; margin-top:50px; color: white;">加入购物车
+                                            background-color: rgb(255,160,4); margin-left: -250px; margin-top:50px; color: white;">
+                                                加入购物车
                                             </button>
                                         </div>
                                     </div>
@@ -528,11 +566,13 @@
                                                         <div id="respond" class="comment-respond">
                                                             <h3 id="reply-title" class="comment-reply-title">
                                                                 成为第一位评论者
-                                                                <small><a rel="nofollow" id="cancel-comment-reply-link" href="#"
+                                                                <small><a rel="nofollow" id="cancel-comment-reply-link"
+                                                                          href="#"
                                                                           style="display:none;">取消回复</a></small>
                                                             </h3>
 
-                                                            <form action="" method="post" id="commentform" class="comment-form">
+                                                            <form action="" method="post" id="commentform"
+                                                                  class="comment-form">
                                                                 <p class="comment-form-rating">
                                                                     <label for="rating">你的评分</label>
                                                                     <select name="rating" id="rating">
@@ -547,12 +587,14 @@
 
                                                                 <p class="comment-form-comment">
                                                                     <label for="comment">你的意见</label>
-                                                                    <textarea id="comment" name="comment" cols="45" rows="8"
+                                                                    <textarea id="comment" name="comment" cols="45"
+                                                                              rows="8"
                                                                               aria-required="true"></textarea>
                                                                 </p>
 
                                                                 <p class="form-submit">
-                                                                    <input name="submit" type="submit" id="submit" class="submit" value="提交">
+                                                                    <input name="submit" type="submit" id="submit"
+                                                                           class="submit" value="提交">
                                                                 </p>
                                                             </form>
                                                         </div>
@@ -571,91 +613,205 @@
                                      data-scroll-reveal="enter bottom move 20px wait 0.2s">
                                     <div class="widget-inner">
                                         <div id="slider_sw_related_upsell_widget-2"
-                                             class="sw-woo-container-slider related-products responsive-slider clearfix loading" data-lg="4"
-                                             data-md="3" data-sm="2" data-xs="2" data-mobile="1" data-speed="1000" data-scroll="1"
+                                             class="sw-woo-container-slider related-products responsive-slider clearfix loading"
+                                             data-lg="4"
+                                             data-md="3" data-sm="2" data-xs="2" data-mobile="1" data-speed="1000"
+                                             data-scroll="1"
                                              data-interval="5000" data-autoplay="false">
                                             <div class="resp-slider-container">
                                                 <div class="box-slider-title">
                                                     <h2><span>相关产品</span></h2>
                                                 </div>
-
-                                                <div class="slider responsive">
-                                                    <c:forEach var="item" items="${list}">
-                                                        <div class="item ">
-                                                            <div class="item-wrap">
-                                                                <div class="item-detail">
-                                                                    <div class="item-img products-thumb">
+                                                <%--recommendGoods--%>
+                                                <c:if test="${not empty recommendGoods}">
+                                                    <div class="slider responsive">
+                                                        <c:forEach var="item" items="${recommendGoods}">
+                                                            <div class="item ">
+                                                                <div class="item-wrap">
+                                                                    <div class="item-detail">
+                                                                        <div class="item-img products-thumb">
                                                                             <a href="${pageContext.request.contextPath}/QueryGoodAction?goodName=${item.goodsName}">
-                                                                        <div class="product-thumb-hover">
-                                                                            <img width="300" height="300"
-                                                                                 src="${pageContext.request.contextPath}/${item.goodsImage}"
-                                                                                 class="attachment-shop_catalog size-shop_catalog wp-post-image"
-                                                                                 sizes="(max-width: 300px) 100vw, 300px">
-                                                                        </div>
-                                                                        </a>
+                                                                                <div class="product-thumb-hover">
+                                                                                    <img width="300" height="300"
+                                                                                         src="${pageContext.request.contextPath}/${item.goodsImage}"
+                                                                                         class="attachment-shop_catalog size-shop_catalog wp-post-image"
+                                                                                         sizes="(max-width: 300px) 100vw, 300px">
+                                                                                </div>
+                                                                            </a>
 
-                                                                        <!-- add to cart, wishlist, compare -->
-                                                                        <div class="item-bottom clearfix">
-                                                                            <a rel="nofollow" href="${pageContext.request.contextPath}/AddGoodsToCart?goodsName=${item.goodsName}"
-                                                                               class="button product_type_simple add_to_cart_button ajax_add_to_cart"
-                                                                               title="Add to Cart">添加到购物车</a>
+                                                                            <!-- add to cart, wishlist, compare -->
+                                                                            <div class="item-bottom clearfix">
+                                                                                <a rel="nofollow"
+                                                                                   href="${pageContext.request.contextPath}/AddGoodsToCart?goodsName=${item.goodsName}"
+                                                                                   class="button product_type_simple add_to_cart_button ajax_add_to_cart"
+                                                                                   title="Add to Cart">添加到购物车</a>
 
-                                                                            <a href="javascript:void(0)" class="compare button" rel="nofollow"
-                                                                               title="Add to Compare">比较</a>
+                                                                                <a href="javascript:void(0)"
+                                                                                   class="compare button" rel="nofollow"
+                                                                                   title="Add to Compare">比较</a>
 
-                                                                            <div class="yith-wcwl-add-to-wishlist add-to-wishlist-248">
-                                                                                <div class="yith-wcwl-add-button show" style="display:block">
-                                                                                    <a href="#" rel="nofollow" class="add_to_wishlist">收藏</a>
-                                                                                    <img src="${pageContext.request.contextPath}/images/wpspin_light.gif" class="ajax-loading" alt="loading"
-                                                                                         width="16" height="16" style="visibility:hidden"/>
+                                                                                <div class="yith-wcwl-add-to-wishlist add-to-wishlist-248">
+                                                                                    <div class="yith-wcwl-add-button show"
+                                                                                         style="display:block">
+                                                                                        <a href="#" rel="nofollow"
+                                                                                           class="add_to_wishlist">收藏</a>
+                                                                                        <img src="${pageContext.request.contextPath}/images/wpspin_light.gif"
+                                                                                             class="ajax-loading"
+                                                                                             alt="loading"
+                                                                                             width="16" height="16"
+                                                                                             style="visibility:hidden"/>
+                                                                                    </div>
+
+                                                                                    <div class="yith-wcwl-wishlistaddedbrowse hide"
+                                                                                         style="display:none;">
+                                                                                        <span class="feedback">Product added!</span>
+                                                                                        <a href="#" rel="nofollow">收藏</a>
+                                                                                    </div>
+
+                                                                                    <div class="yith-wcwl-wishlistexistsbrowse hide"
+                                                                                         style="display:none">
+                                                                                        <span class="feedback">The product is already in the wishlist!</span>
+                                                                                        <a href="#" rel="nofollow">Browse
+                                                                                            Wishlist</a>
+                                                                                    </div>
+
+                                                                                    <div style="clear:both"></div>
+                                                                                    <div class="yith-wcwl-wishlistaddresponse"></div>
                                                                                 </div>
 
-                                                                                <div class="yith-wcwl-wishlistaddedbrowse hide" style="display:none;">
-                                                                                    <span class="feedback">Product added!</span>
-                                                                                    <a href="#" rel="nofollow">收藏</a>
-                                                                                </div>
-
-                                                                                <div class="yith-wcwl-wishlistexistsbrowse hide" style="display:none">
-                                                                                    <span class="feedback">The product is already in the wishlist!</span>
-                                                                                    <a href="#" rel="nofollow">Browse Wishlist</a>
-                                                                                </div>
-
-                                                                                <div style="clear:both"></div>
-                                                                                <div class="yith-wcwl-wishlistaddresponse"></div>
+                                                                                <div class="clear"></div>
+                                                                                <a href="${pageContext.request.contextPath}/AddGoodsToCart?goodsName=${item.goodsName}"
+                                                                                   data-fancybox-type="ajax"
+                                                                                   class="sm_quickview_handler-list fancybox fancybox.ajax">快速查看</a>
                                                                             </div>
-
-                                                                            <div class="clear"></div>
-                                                                            <a href="${pageContext.request.contextPath}/AddGoodsToCart?goodsName=${item.goodsName}" data-fancybox-type="ajax"
-                                                                               class="sm_quickview_handler-list fancybox fancybox.ajax">快速查看</a>
                                                                         </div>
-                                                                    </div>
 
-                                                                    <div class="item-content">
-                                                                        <!-- rating  -->
-                                                                        <div class="reviews-content">
-                                                                            <div class="star"></div>
-                                                                            <div class="item-number-rating">
-                                                                                0 Review(s)
+                                                                        <div class="item-content">
+                                                                            <!-- rating  -->
+                                                                            <div class="reviews-content">
+                                                                                <div class="star"></div>
+                                                                                <div class="item-number-rating">
+                                                                                    0 Review(s)
+                                                                                </div>
                                                                             </div>
-                                                                        </div>
-                                                                        <!-- end rating  -->
+                                                                            <!-- end rating  -->
 
-                                                                        <h4><a href="${pageContext.request.contextPath}/QueryGoodAction?goodName=${item.goodsName}" title="turkey qui">${item.goodsName}</a></h4>
+                                                                            <h4>
+                                                                                <a href="${pageContext.request.contextPath}/QueryGoodAction?goodName=${item.goodsName}"
+                                                                                   title="turkey qui">${item.goodsName}</a>
+                                                                            </h4>
 
-                                                                        <!-- price -->
-                                                                        <div class="item-price">
+                                                                            <!-- price -->
+                                                                            <div class="item-price">
 																			<span>
 																				<span class="woocommerce-Price-amount amount">
 																					<span class="woocommerce-Price-currencySymbol">￥</span>${item.goodsPrice}
 																				</span>
 																			</span>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                    </c:forEach>
-                                                </div>
+                                                        </c:forEach>
+                                                    </div>
+                                                </c:if>
+                                                <%--<c:if test="${ empty recommendGoods}">--%>
+                                                    <%--<div class="slider responsive">--%>
+                                                        <%--<c:forEach var="item" items="${list}">--%>
+                                                            <%--<div class="item ">--%>
+                                                                <%--<div class="item-wrap">--%>
+                                                                    <%--<div class="item-detail">--%>
+                                                                        <%--<div class="item-img products-thumb">--%>
+                                                                            <%--<a href="${pageContext.request.contextPath}/QueryGoodAction?goodName=${item.goodsName}">--%>
+                                                                                <%--<div class="product-thumb-hover">--%>
+                                                                                    <%--<img width="300" height="300"--%>
+                                                                                         <%--src="${pageContext.request.contextPath}/${item.goodsImage}"--%>
+                                                                                         <%--class="attachment-shop_catalog size-shop_catalog wp-post-image"--%>
+                                                                                         <%--sizes="(max-width: 300px) 100vw, 300px">--%>
+                                                                                <%--</div>--%>
+                                                                            <%--</a>--%>
+
+                                                                            <%--<!-- add to cart, wishlist, compare -->--%>
+                                                                            <%--<div class="item-bottom clearfix">--%>
+                                                                                <%--<a rel="nofollow"--%>
+                                                                                   <%--href="${pageContext.request.contextPath}/AddGoodsToCart?goodsName=${item.goodsName}"--%>
+                                                                                   <%--class="button product_type_simple add_to_cart_button ajax_add_to_cart"--%>
+                                                                                   <%--title="Add to Cart">添加到购物车</a>--%>
+
+                                                                                <%--<a href="javascript:void(0)"--%>
+                                                                                   <%--class="compare button" rel="nofollow"--%>
+                                                                                   <%--title="Add to Compare">比较</a>--%>
+
+                                                                                <%--<div class="yith-wcwl-add-to-wishlist add-to-wishlist-248">--%>
+                                                                                    <%--<div class="yith-wcwl-add-button show"--%>
+                                                                                         <%--style="display:block">--%>
+                                                                                        <%--<a href="#" rel="nofollow"--%>
+                                                                                           <%--class="add_to_wishlist">收藏</a>--%>
+                                                                                        <%--<img src="${pageContext.request.contextPath}/images/wpspin_light.gif"--%>
+                                                                                             <%--class="ajax-loading"--%>
+                                                                                             <%--alt="loading"--%>
+                                                                                             <%--width="16" height="16"--%>
+                                                                                             <%--style="visibility:hidden"/>--%>
+                                                                                    <%--</div>--%>
+
+                                                                                    <%--<div class="yith-wcwl-wishlistaddedbrowse hide"--%>
+                                                                                         <%--style="display:none;">--%>
+                                                                                        <%--<span class="feedback">Product added!</span>--%>
+                                                                                        <%--<a href="#" rel="nofollow">收藏</a>--%>
+                                                                                    <%--</div>--%>
+
+                                                                                    <%--<div class="yith-wcwl-wishlistexistsbrowse hide"--%>
+                                                                                         <%--style="display:none">--%>
+                                                                                        <%--<span class="feedback">The product is already in the wishlist!</span>--%>
+                                                                                        <%--<a href="#" rel="nofollow">Browse--%>
+                                                                                            <%--Wishlist</a>--%>
+                                                                                    <%--</div>--%>
+
+                                                                                    <%--<div style="clear:both"></div>--%>
+                                                                                    <%--<div class="yith-wcwl-wishlistaddresponse"></div>--%>
+                                                                                <%--</div>--%>
+
+                                                                                <%--<div class="clear"></div>--%>
+                                                                                <%--<a href="${pageContext.request.contextPath}/AddGoodsToCart?goodsName=${item.goodsName}"--%>
+                                                                                   <%--data-fancybox-type="ajax"--%>
+                                                                                   <%--class="sm_quickview_handler-list fancybox fancybox.ajax">快速查看</a>--%>
+                                                                            <%--</div>--%>
+                                                                        <%--</div>--%>
+
+                                                                        <%--<div class="item-content">--%>
+                                                                            <%--<!-- rating  -->--%>
+                                                                            <%--<div class="reviews-content">--%>
+                                                                                <%--<div class="star"></div>--%>
+                                                                                <%--<div class="item-number-rating">--%>
+                                                                                    <%--0 Review(s)--%>
+                                                                                <%--</div>--%>
+                                                                            <%--</div>--%>
+                                                                            <%--<!-- end rating  -->--%>
+
+                                                                            <%--<h4>--%>
+                                                                                <%--<a href="${pageContext.request.contextPath}/QueryGoodAction?goodName=${item.goodsName}"--%>
+                                                                                   <%--title="turkey qui">${item.goodsName}</a>--%>
+                                                                            <%--</h4>--%>
+
+                                                                            <%--<!-- price -->--%>
+                                                                            <%--<div class="item-price">--%>
+																			<%--<span>--%>
+																				<%--<span class="woocommerce-Price-amount amount">--%>
+																					<%--<span class="woocommerce-Price-currencySymbol">￥</span>${item.goodsPrice}--%>
+																				<%--</span>--%>
+																			<%--</span>--%>
+                                                                            <%--</div>--%>
+                                                                        <%--</div>--%>
+                                                                    <%--</div>--%>
+                                                                <%--</div>--%>
+                                                            <%--</div>--%>
+                                                        <%--</c:forEach>--%>
+                                                    <%--</div>--%>
+                                                <%--</c:if>--%>
+
+
+
                                             </div>
                                         </div>
                                     </div>
@@ -680,11 +836,13 @@
                 <div class="wpb_column vc_column_container vc_col-sm-12">
                     <div class="vc_column-inner ">
                         <div class="wpb_wrapper">
-                            <div id="sw_testimonial01" class="testimonial-slider client-wrapper-b carousel slide " data-interval="0">
+                            <div id="sw_testimonial01" class="testimonial-slider client-wrapper-b carousel slide "
+                                 data-interval="0">
                                 <div class="carousel-cl nav-custom">
                                     <a class="prev-test fa fa-angle-left" href="#sw_testimonial01" role="button"
                                        data-slide="prev"><span></span></a>
-                                    <a class="next-test fa fa-angle-right" href="#sw_testimonial01" role="button" data-slide="next"><span></span></a>
+                                    <a class="next-test fa fa-angle-right" href="#sw_testimonial01" role="button"
+                                       data-slide="next"><span></span></a>
                                 </div>
                                 <div class="carousel-inner">
                                     <c:forEach varStatus="status" var="comment" items="${coomentMap}">
@@ -699,7 +857,8 @@
                                                             <a href="#" title="">
                                                                 <img width="127" height="127"
                                                                      src="${pageContext.request.contextPath}/${comment.key.userImage}"
-                                                                     class="attachment-thumbnail size-thumbnail wp-post-image" alt=""/>
+                                                                     class="attachment-thumbnail size-thumbnail wp-post-image"
+                                                                     alt=""/>
                                                             </a>
                                                         </div>
 
@@ -709,7 +868,8 @@
                                                             </div>
 
                                                             <div class="name-client">
-                                                                <h2><a href="#" title="">${comment.key.userName}</a></h2>
+                                                                <h2><a href="#" title="">${comment.key.userName}</a>
+                                                                </h2>
                                                                 <p>Web Developer</p>
                                                             </div>
                                                         </div>
@@ -725,7 +885,8 @@
                                                             <a href="#" title="">
                                                                 <img width="127" height="127"
                                                                      src="${pageContext.request.contextPath}/${comment.key.userImage}"
-                                                                     class="attachment-thumbnail size-thumbnail wp-post-image" alt=""/>
+                                                                     class="attachment-thumbnail size-thumbnail wp-post-image"
+                                                                     alt=""/>
                                                             </a>
                                                         </div>
 
@@ -735,7 +896,8 @@
                                                             </div>
 
                                                             <div class="name-client">
-                                                                <h2><a href="#" title="">${comment.key.userName}</a></h2>
+                                                                <h2><a href="#" title="">${comment.key.userName}</a>
+                                                                </h2>
                                                                 <p>Web Developer</p>
                                                             </div>
                                                         </div>
@@ -765,14 +927,17 @@
                                                     <div class="wrap-newletter">
                                                         <h3>邮箱订阅</h3>
 
-                                                        <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-275" method="post" data-id="275"
+                                                        <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-275"
+                                                              method="post" data-id="275"
                                                               data-name="">
                                                             <div class="mc4wp-form-fields">
                                                                 <div class="newsletter-content">
-                                                                    <input type="email" class="newsletter-email" name="EMAIL"
+                                                                    <input type="email" class="newsletter-email"
+                                                                           name="EMAIL"
                                                                            placeholder="你的邮件"
                                                                            required=""/>
-                                                                    <input class="newsletter-submit" type="submit" value="订阅"/>
+                                                                    <input class="newsletter-submit" type="submit"
+                                                                           value="订阅"/>
                                                                 </div>
                                                             </div>
                                                             <div class="mc4wp-response"></div>
@@ -837,7 +1002,8 @@
                                                 <div class="wpb_wrapper">
                                                     <div class="ya-logo">
                                                         <a href="#">
-                                                            <img src="${pageContext.request.contextPath}/images/icons/logo-footer.png" alt="logo"/>
+                                                            <img src="${pageContext.request.contextPath}/images/icons/logo-footer.png"
+                                                                 alt="logo"/>
                                                         </a>
                                                     </div>
                                                 </div>
@@ -856,18 +1022,22 @@
                                                             <ul>
                                                                 <li>山东省，紫薇路路，格拉斯哥，D04 89GR。</li>
                                                                 <li>(801) 2345 - 6788 / (801) 2345 - 6789</li>
-                                                                <li><a href="mailto:contact@etrostore.com">支持@某商店.com</a></li>
+                                                                <li>
+                                                                    <a href="mailto:contact@etrostore.com">支持@某商店.com</a>
+                                                                </li>
                                                             </ul>
                                                         </div>
 
                                                         <div class="store">
                                                             <a href="#">
-                                                                <img src="${pageContext.request.contextPath}/images/1903/app-store.png" alt="store"
+                                                                <img src="${pageContext.request.contextPath}/images/1903/app-store.png"
+                                                                     alt="store"
                                                                      title="store"/>
                                                             </a>
 
                                                             <a href="#">
-                                                                <img src="${pageContext.request.contextPath}/images/1903/google-store.png" alt="store"
+                                                                <img src="${pageContext.request.contextPath}/images/1903/google-store.png"
+                                                                     alt="store"
                                                                      title="store"/>
                                                             </a>
                                                         </div>
@@ -1003,7 +1173,8 @@
                                                             <h2>找到一家商店</h2>
                                                         </div>
 
-                                                        <img src="${pageContext.request.contextPath}/images/1903/map.jpg" alt="map" title="map"/>
+                                                        <img src="${pageContext.request.contextPath}/images/1903/map.jpg"
+                                                             alt="map" title="map"/>
 
                                                         <a href="#" class="link-map">商店位置</a>
                                                     </div>
@@ -1076,7 +1247,8 @@
                             <div class="textwidget">
                                 <div class="payment">
                                     <a href="#">
-                                        <img src="${pageContext.request.contextPath}/images/1903/paypal.png" alt="payment" title="payment"/>
+                                        <img src="${pageContext.request.contextPath}/images/1903/paypal.png"
+                                             alt="payment" title="payment"/>
                                     </a>
                                 </div>
                             </div>
@@ -1113,11 +1285,13 @@
             <div class="block-content">
                 <div class="col-reg registered-account">
                     <div class="email-input">
-                        <input type="text" class="form-control input-text username" name="username" id="username" placeholder="Username"/>
+                        <input type="text" class="form-control input-text username" name="username" id="username"
+                               placeholder="Username"/>
                     </div>
 
                     <div class="pass-input">
-                        <input class="form-control input-text password" type="password" placeholder="Password" name="password" id="password"/>
+                        <input class="form-control input-text password" type="password" placeholder="Password"
+                               name="password" id="password"/>
                     </div>
 
                     <div class="ft-link-p">
@@ -1154,7 +1328,7 @@
 
 <a id="etrostore-totop" href="#"></a>
 
-<div id="subscribe_popup" class="subscribe-popup" >
+<div id="subscribe_popup" class="subscribe-popup">
     <div class="subscribe-popup-container">
         <h2>Join our newsletter</h2>
         <div class="description">Subscribe now to get 40% of on any product!</div>
@@ -1216,17 +1390,22 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/widget.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/mouse.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/slider.min.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/js/js_composer/js_composer_front.min.js"></script>
+<script type="text/javascript"
+        src="${pageContext.request.contextPath}/js/js_composer/js_composer_front.min.js"></script>
 
-<script type="text/javascript" src="${pageContext.request.contextPath}/js/yith-woocommerce-compare/jquery.colorbox-min.js"></script>
+<script type="text/javascript"
+        src="${pageContext.request.contextPath}/js/yith-woocommerce-compare/jquery.colorbox-min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/sw_core/isotope.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/sw_core/jquery.fancybox.pack.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/sw_woocommerce/category-ajax.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/js/sw_woocommerce/jquery.countdown.min.js"></script>
+<script type="text/javascript"
+        src="${pageContext.request.contextPath}/js/sw_woocommerce/jquery.countdown.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/woocommerce/price-slider.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/woocommerce/single-product.min.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/js/woocommerce/prettyPhoto/jquery.prettyPhoto.init.min.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/js/woocommerce/prettyPhoto/jquery.prettyPhoto.min.js"></script>
+<script type="text/javascript"
+        src="${pageContext.request.contextPath}/js/woocommerce/prettyPhoto/jquery.prettyPhoto.init.min.js"></script>
+<script type="text/javascript"
+        src="${pageContext.request.contextPath}/js/woocommerce/prettyPhoto/jquery.prettyPhoto.min.js"></script>
 
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/plugins.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/megamenu.min.js"></script>

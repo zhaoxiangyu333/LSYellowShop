@@ -44,7 +44,7 @@ public class ImageAction extends HttpServlet {
 			} else {
 				type = Font.PLAIN;
 			}
-			graphics.setFont(new Font("@华文隶书", type, 18));
+			graphics.setFont(new Font("Times", type, 18));
 			graphics.setColor(new Color(random.nextInt(256), random.nextInt(256), random.nextInt(256)));
 			graphics.drawString(str, i * 18, 25);
 			stringBuffer.append(str);

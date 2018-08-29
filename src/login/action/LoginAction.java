@@ -2,6 +2,8 @@ package login.action;
 
 import admin.servlet.AdminServlet;
 import admin.vo.Admin;
+import good.vo.Good;
+import init.recommend.dao.RecommendDao;
 import login.servlet.LoginServlet;
 import user.servlet.UserServlet;
 import user.vo.User;
@@ -17,6 +19,9 @@ import java.util.List;
 public class LoginAction extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        RecommendDao recommendDao = new RecommendDao();
+        recommendDao.initRecommendFromMysql();
+
         String userName = request.getParameter("userName");
         String userPass = request.getParameter("userPass");
 
@@ -41,15 +46,18 @@ public class LoginAction extends HttpServlet {
             List<UserOrderGoods> orderList = userServlet.queryAllOrders(userName);
             List<UserOrderGoods> orderAllList = userServlet.queryOrders(userName);
 
+            List<Good> recommendGoods = userServlet.getRecommendGoods(user.getUserId());
+
             request.getSession().setAttribute("orderList", orderList);
             request.getSession().setAttribute("orderAllList", orderAllList);
+            request.getSession().setAttribute("recommendGoods", recommendGoods);
 
             // 跳转到登录界面前的url
             String reUrl = String.valueOf(request.getSession().getAttribute("reUrl"));
 
             reUrl = reUrl.split("//")[1];
 
-            if (reUrl.split("/").length==2){
+            if (reUrl.split("/").length == 2) {
                 reUrl = reUrl.split("/")[1];
             } else {
                 reUrl = "";

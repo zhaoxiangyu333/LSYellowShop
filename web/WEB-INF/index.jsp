@@ -1567,5 +1567,9 @@
     });
 </script>
 
+<script>
+    // 统计用户点击产品的操作
+</script>
+
 </body>
 </html>
