@@ -59,6 +59,7 @@ public class InitAction extends HttpServlet {
         // 商品类别
         this.getServletContext().setAttribute("pros", pros);
 
+
     }
 
     @Override
@@ -85,7 +86,7 @@ public class InitAction extends HttpServlet {
             }
         }
 
-        servlet3.queryAllGoods(page,null);
+        servlet3.queryAllGoods(page, null);
 
 
         request.getRequestDispatcher("/WEB-INF/index.jsp").forward(request, response);

@@ -60,19 +60,22 @@
                                     <div class="widget-inner">
                                         <ul id="menu-my-account" class="menu">
                                             <li class="menu-my-account">
-                                                <a class="item-link" href="${pageContext.request.contextPath}/UserInitMyAccountAction">
+                                                <a class="item-link"
+                                                   href="${pageContext.request.contextPath}/UserInitMyAccountAction">
                                                     <span class="menu-title">我的账户</span>
                                                 </a>
                                             </li>
 
                                             <li class="menu-cart">
-                                                <a class="item-link" href="${pageContext.request.contextPath}/CartInitAction">
+                                                <a class="item-link"
+                                                   href="${pageContext.request.contextPath}/CartInitAction">
                                                     <span class="menu-title">购物车</span>
                                                 </a>
                                             </li>
 
                                             <li class="menu-checkout">
-                                                <a class="item-link" href="${pageContext.request.contextPath}/SkipCheckoutAction">
+                                                <a class="item-link"
+                                                   href="${pageContext.request.contextPath}/SkipCheckoutAction">
                                                     <span class="menu-title">收银台</span>
                                                 </a>
                                             </li>
@@ -83,7 +86,8 @@
                                                 </a>
                                             </li>
                                             <li class="menu-wishlist">
-                                                <a href="${pageContext.request.contextPath}/LoginOutAction" class="item-link">
+                                                <a href="${pageContext.request.contextPath}/LoginOutAction"
+                                                   class="item-link">
                                                     <span>退出</span>
                                                 </a>
                                             </li>
@@ -99,7 +103,8 @@
                                 <div class="widget-inner">
                                     <ul id="menu-checkout" class="menu">
                                         <li class="menu-checkout">
-                                            <a class="item-link" href="${pageContext.request.contextPath}/SkipCheckoutAction">
+                                            <a class="item-link"
+                                               href="${pageContext.request.contextPath}/SkipCheckoutAction">
                                                 <span class="menu-title">收银台</span>
                                             </a>
                                         </li>
@@ -161,7 +166,8 @@
                         <div class="entry-summary">
                             <div class="woocommerce">
                                 <form action="" method="post">
-                                    <table class="shop_table shop_table_responsive cart" cellspacing="0" id="order_table_red">
+                                    <table class="shop_table shop_table_responsive cart" cellspacing="0"
+                                           id="order_table_red">
                                         <thead>
                                         <tr>
                                             <th class="product-remove">&nbsp;</th>
@@ -175,14 +181,18 @@
                                         <tbody>
                                         <%--每个商品--%>
                                         <c:forEach var="userordergoods" items="${orderList}">
-                                            <tr class="cart_item" id="oneOrderGoods" whcName="${userordergoods.good.goodsName}">
+                                            <tr class="cart_item" id="oneOrderGoods"
+                                                whcName="${userordergoods.good.goodsName}">
                                                 <td class="product-remove">
-                                                    <a href="#" class="remove" title="Remove this item"><i class="fa fa-times" aria-hidden="true"></i></a>
+                                                    <a href="#" class="remove" title="Remove this item"
+                                                       removeId="${userordergoods.id}"><i
+                                                            class="fa fa-times" aria-hidden="true"></i></a>
                                                 </td>
 
                                                 <td class="product-thumbnail">
                                                     <a href="#">
-                                                        <img width="100" height="100" src="${pageContext.request.contextPath}/${userordergoods.good.goodsImage}"
+                                                        <img width="100" height="100"
+                                                             src="${pageContext.request.contextPath}/${userordergoods.good.goodsImage}"
                                                              class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image"
                                                              sizes="(max-width: 120px) 100vw, 120px">
                                                     </a>
@@ -199,9 +209,11 @@
 
                                                 <td class="product-quantity" data-title="个数">
                                                     <div class="quantity">
-                                                        <input type="number" step="1" min="0" max="" name="" value="${userordergoods.orderNum}" title="Qty"
+                                                        <input type="number" step="1" min="0" max="" name=""
+                                                               value="${userordergoods.orderNum}" title="Qty"
                                                                class="input-text qty text"
-                                                               size="4" pattern="[0-9]*" inputmode="numeric" whc="orderItemNumber" whcId="${userordergoods.id}">
+                                                               size="4" pattern="[0-9]*" inputmode="numeric"
+                                                               whc="orderItemNumber" whcId="${userordergoods.id}">
                                                     </div>
                                                 </td>
 
@@ -221,7 +233,8 @@
                                                 <tr class="order-total">
                                                     <th>总计</th>
                                                     <td data-title="总计">
-                                                        <strong><span class="woocommerce-Price-amount amount" id="sumSpan"><span
+                                                        <strong><span class="woocommerce-Price-amount amount"
+                                                                      id="sumSpan"><span
                                                                 class="woocommerce-Price-currencySymbol">￥</span>300.00</span></strong>
                                                     </td>
                                                 </tr>
@@ -229,7 +242,8 @@
                                             </table>
 
                                             <div class="wc-proceed-to-checkout">
-                                                <a href="${pageContext.request.contextPath}/SkipCheckoutAction" class="checkout-button button alt wc-forward">进行结算</a>
+                                                <a href="${pageContext.request.contextPath}/SkipCheckoutAction"
+                                                   class="checkout-button button alt wc-forward">进行结算</a>
                                             </div>
                                         </div>
                                     </div>
@@ -251,11 +265,13 @@
                 <div class="wpb_column vc_column_container vc_col-sm-12">
                     <div class="vc_column-inner ">
                         <div class="wpb_wrapper">
-                            <div id="sw_testimonial01" class="testimonial-slider client-wrapper-b carousel slide " data-interval="0">
+                            <div id="sw_testimonial01" class="testimonial-slider client-wrapper-b carousel slide "
+                                 data-interval="0">
                                 <div class="carousel-cl nav-custom">
                                     <a class="prev-test fa fa-angle-left" href="#sw_testimonial01" role="button"
                                        data-slide="prev"><span></span></a>
-                                    <a class="next-test fa fa-angle-right" href="#sw_testimonial01" role="button" data-slide="next"><span></span></a>
+                                    <a class="next-test fa fa-angle-right" href="#sw_testimonial01" role="button"
+                                       data-slide="next"><span></span></a>
                                 </div>
                                 <div class="carousel-inner">
                                     <c:forEach varStatus="status" var="comment" items="${coomentMap}">
@@ -270,7 +286,8 @@
                                                             <a href="#" title="">
                                                                 <img width="127" height="127"
                                                                      src="${pageContext.request.contextPath}/${comment.key.userImage}"
-                                                                     class="attachment-thumbnail size-thumbnail wp-post-image" alt=""/>
+                                                                     class="attachment-thumbnail size-thumbnail wp-post-image"
+                                                                     alt=""/>
                                                             </a>
                                                         </div>
 
@@ -280,7 +297,8 @@
                                                             </div>
 
                                                             <div class="name-client">
-                                                                <h2><a href="#" title="">${comment.key.userName}</a></h2>
+                                                                <h2><a href="#" title="">${comment.key.userName}</a>
+                                                                </h2>
                                                                 <p>Web Developer</p>
                                                             </div>
                                                         </div>
@@ -296,7 +314,8 @@
                                                             <a href="#" title="">
                                                                 <img width="127" height="127"
                                                                      src="${pageContext.request.contextPath}/${comment.key.userImage}"
-                                                                     class="attachment-thumbnail size-thumbnail wp-post-image" alt=""/>
+                                                                     class="attachment-thumbnail size-thumbnail wp-post-image"
+                                                                     alt=""/>
                                                             </a>
                                                         </div>
 
@@ -306,7 +325,8 @@
                                                             </div>
 
                                                             <div class="name-client">
-                                                                <h2><a href="#" title="">${comment.key.userName}</a></h2>
+                                                                <h2><a href="#" title="">${comment.key.userName}</a>
+                                                                </h2>
                                                                 <p>Web Developer</p>
                                                             </div>
                                                         </div>
@@ -336,14 +356,17 @@
                                                     <div class="wrap-newletter">
                                                         <h3>邮箱订阅</h3>
 
-                                                        <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-275" method="post" data-id="275"
+                                                        <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-275"
+                                                              method="post" data-id="275"
                                                               data-name="">
                                                             <div class="mc4wp-form-fields">
                                                                 <div class="newsletter-content">
-                                                                    <input type="email" class="newsletter-email" name="EMAIL"
+                                                                    <input type="email" class="newsletter-email"
+                                                                           name="EMAIL"
                                                                            placeholder="你的邮件"
                                                                            required=""/>
-                                                                    <input class="newsletter-submit" type="submit" value="订阅"/>
+                                                                    <input class="newsletter-submit" type="submit"
+                                                                           value="订阅"/>
                                                                 </div>
                                                             </div>
                                                             <div class="mc4wp-response"></div>
@@ -408,7 +431,8 @@
                                                 <div class="wpb_wrapper">
                                                     <div class="ya-logo">
                                                         <a href="#">
-                                                            <img src="${pageContext.request.contextPath}/images/icons/logo-footer.png" alt="logo"/>
+                                                            <img src="${pageContext.request.contextPath}/images/icons/logo-footer.png"
+                                                                 alt="logo"/>
                                                         </a>
                                                     </div>
                                                 </div>
@@ -427,18 +451,22 @@
                                                             <ul>
                                                                 <li>山东省，紫薇路路，格拉斯哥，D04 89GR。</li>
                                                                 <li>(801) 2345 - 6788 / (801) 2345 - 6789</li>
-                                                                <li><a href="mailto:contact@etrostore.com">支持@某商店.com</a></li>
+                                                                <li>
+                                                                    <a href="mailto:contact@etrostore.com">支持@某商店.com</a>
+                                                                </li>
                                                             </ul>
                                                         </div>
 
                                                         <div class="store">
                                                             <a href="#">
-                                                                <img src="${pageContext.request.contextPath}/images/1903/app-store.png" alt="store"
+                                                                <img src="${pageContext.request.contextPath}/images/1903/app-store.png"
+                                                                     alt="store"
                                                                      title="store"/>
                                                             </a>
 
                                                             <a href="#">
-                                                                <img src="${pageContext.request.contextPath}/images/1903/google-store.png" alt="store"
+                                                                <img src="${pageContext.request.contextPath}/images/1903/google-store.png"
+                                                                     alt="store"
                                                                      title="store"/>
                                                             </a>
                                                         </div>
@@ -574,7 +602,8 @@
                                                             <h2>找到一家商店</h2>
                                                         </div>
 
-                                                        <img src="${pageContext.request.contextPath}/images/1903/map.jpg" alt="map" title="map"/>
+                                                        <img src="${pageContext.request.contextPath}/images/1903/map.jpg"
+                                                             alt="map" title="map"/>
 
                                                         <a href="#" class="link-map">商店位置</a>
                                                     </div>
@@ -647,7 +676,8 @@
                             <div class="textwidget">
                                 <div class="payment">
                                     <a href="#">
-                                        <img src="${pageContext.request.contextPath}/images/1903/paypal.png" alt="payment" title="payment"/>
+                                        <img src="${pageContext.request.contextPath}/images/1903/paypal.png"
+                                             alt="payment" title="payment"/>
                                     </a>
                                 </div>
                             </div>
@@ -685,11 +715,13 @@
             <div class="block-content">
                 <div class="col-reg registered-account">
                     <div class="email-input">
-                        <input type="text" class="form-control input-text username" name="username" id="username" placeholder="Username"/>
+                        <input type="text" class="form-control input-text username" name="username" id="username"
+                               placeholder="Username"/>
                     </div>
 
                     <div class="pass-input">
-                        <input class="form-control input-text password" type="password" placeholder="Password" name="password" id="password"/>
+                        <input class="form-control input-text password" type="password" placeholder="Password"
+                               name="password" id="password"/>
                     </div>
 
                     <div class="ft-link-p">
@@ -726,7 +758,8 @@
 
 <a id="etrostore-totop" href="#"></a>
 
-<div id="subscribe_popup" class="subscribe-popup" style="background: url(${pageContext.request.contextPath}/images/icons/bg_newsletter.jpg)">
+<div id="subscribe_popup" class="subscribe-popup"
+     style="background: url(${pageContext.request.contextPath}/images/icons/bg_newsletter.jpg)">
     <div class="subscribe-popup-container">
         <h2>Join our newsletter</h2>
         <div class="description">Subscribe now to get 40% of on any product!</div>
@@ -776,8 +809,10 @@
 </div>
 
 <%--加载不够的商品,隐藏域--%>
-<div class="alert alert-danger alert-dismissible" role="alert" style="position: fixed; top: 60px; right: -300px; width: 300px; display: none">
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<div class="alert alert-danger alert-dismissible" role="alert"
+     style="position: fixed; top: 60px; right: -300px; width: 300px; display: none">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span>
+    </button>
     <c:forEach var="orderNeed" items="${needList}">
         <strong>${orderNeed.good.goodsName}</strong> 库存不足
     </c:forEach>
@@ -793,14 +828,17 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/owl-carousel/owl.carousel.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/slick-1.6.0/slick.min.js"></script>
 
-<script type="text/javascript" src="${pageContext.request.contextPath}/js/yith-woocommerce-compare/jquery.colorbox-min.js"></script>
+<script type="text/javascript"
+        src="${pageContext.request.contextPath}/js/yith-woocommerce-compare/jquery.colorbox-min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/sw_core/isotope.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/sw_core/jquery.fancybox.pack.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/sw_woocommerce/category-ajax.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/js/sw_woocommerce/jquery.countdown.min.js"></script>
+<script type="text/javascript"
+        src="${pageContext.request.contextPath}/js/sw_woocommerce/jquery.countdown.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/wc-quantity-increment.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/woocommerce/cart.min.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/js/js_composer/js_composer_front.min.js"></script>
+<script type="text/javascript"
+        src="${pageContext.request.contextPath}/js/js_composer/js_composer_front.min.js"></script>
 
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/plugins.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/megamenu.min.js"></script>
@@ -837,7 +875,7 @@
             for (var i = 0; i < myorder.length; i++) {
                 for (var j = 0; j < $order_table_red_trs.length; j++) {
                     if ($.trim(myorder[i]) == $.trim($($order_table_red_trs[j]).attr("whcName"))) {
-                        $($order_table_red_trs[j]).css({'background-color':'#f4524d26'});
+                        $($order_table_red_trs[j]).css({'background-color': '#f4524d26'});
                     }
                 }
             }
@@ -876,7 +914,15 @@
         // 缺少的货物弹出提醒
         alertNeedList();
 
-        //删除货物操作
+        // TODO:删除货物操作
+        var $removes = $(".remove");
+        for (var i = 0; i < $removes.length; i++) {
+            $($removes[i]).click(function () {
+                var $remove = $(this);
+                var removeId = $remove.attr("removeId");
+                window.location.href = "${pageContext.request.contextPath}/DeleteGoodsFromOrder?removeId="+removeId;
+            });
+        }
 
 
     });

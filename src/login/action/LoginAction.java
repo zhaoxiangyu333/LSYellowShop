@@ -46,22 +46,37 @@ public class LoginAction extends HttpServlet {
             List<UserOrderGoods> orderList = userServlet.queryAllOrders(userName);
             List<UserOrderGoods> orderAllList = userServlet.queryOrders(userName);
 
+//            FIXME:切换本地开发需注释
             List<Good> recommendGoods = userServlet.getRecommendGoods(user.getUserId());
 
             request.getSession().setAttribute("orderList", orderList);
             request.getSession().setAttribute("orderAllList", orderAllList);
+            //            FIXME:切换本地开发需注释
             request.getSession().setAttribute("recommendGoods", recommendGoods);
-
+//
             // 跳转到登录界面前的url
             String reUrl = String.valueOf(request.getSession().getAttribute("reUrl"));
 
-            reUrl = reUrl.split("//")[1];
-
-            if (reUrl.split("/").length == 2) {
-                reUrl = reUrl.split("/")[1];
-            } else {
+//            FIXME:切换本地开发需注释
+            if (reUrl.endsWith("/Shop/")) {
                 reUrl = "";
+            } else if (reUrl.endsWith("/LoginOutAction")) {
+                reUrl = "";
+            } else {
+                int num = reUrl.indexOf("/Shop/");
+                reUrl = reUrl.substring(num + 6);
             }
+
+
+//            if (reUrl.endsWith("8080/")) {
+//                reUrl = "";
+//            } else if (reUrl.endsWith("/LoginOutAction")) {
+//                reUrl = "";
+//            } else {
+//                int num = reUrl.indexOf("8080/");
+//                reUrl = reUrl.substring(num + 5);
+//            }
+
 
             request.getRequestDispatcher(reUrl).forward(request, response);
         }

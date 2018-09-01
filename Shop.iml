@@ -131,5 +131,27 @@
         </SOURCES>
       </library>
     </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Downloads/gt-java-sdk-master/lib/java-json.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/Downloads/gt-java-sdk-master/lib/java-json.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Downloads/F2FPay_Demo_Java-1/TradePayDemo/classes/artifacts/TradePayDemo_jar/TradePayDemo.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/Downloads/F2FPay_Demo_Java-1/TradePayDemo/classes/artifacts/TradePayDemo_jar/TradePayDemo.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>

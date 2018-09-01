@@ -15,6 +15,7 @@ import java.util.List;
 public class CartInitAction extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		GetPayReply.ifGet2 = false;
 		UserServlet servlet = new UserServlet();
 		User user = (User) request.getSession().getAttribute("user");
 		List<UserOrderGoods> orderList = servlet.queryAllOrders(user.getUserName());

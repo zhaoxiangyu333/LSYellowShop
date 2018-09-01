@@ -29,7 +29,6 @@
     <meta name="twitter:card" content=""/>
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="shortcut icon" href="favicon.ico">
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
 
@@ -106,7 +105,6 @@
 <!-- Main JS -->
 <script src="${pageContext.request.contextPath}/js/sign/main.js"></script>
 
-
 <script src="${pageContext.request.contextPath}/js/sign/modernizr-2.6.2.min.js"></script>
 <script>
     $(function () {
@@ -168,5 +166,6 @@
         });
     });
 </script>
+
 </body>
 </html>

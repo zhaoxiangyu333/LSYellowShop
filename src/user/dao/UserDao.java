@@ -401,4 +401,20 @@ public class UserDao {
 
         return list;
     }
+
+    /**
+     * 从购物车中删除订单
+     *
+     * @param removeId
+     */
+    public void deleteGoodsFromOrder(int removeId) {
+        String sql = "delete from `Shop`.`order` where id=" + removeId;
+        this.conn = DataSourceConnection.getConn();
+        try {
+            this.stat = this.conn.prepareStatement(sql);
+            this.stat.execute();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 }

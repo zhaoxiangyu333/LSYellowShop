@@ -17,6 +17,16 @@
           <element id="file-copy" path="$USER_HOME$/Documents/UserJar/goole-gson/gson-2.2.4.jar" />
           <element id="file-copy" path="$USER_HOME$/Documents/UserJar/commons/commons-fileupload-1.2.2.jar" />
           <element id="file-copy" path="$USER_HOME$/Documents/UserJar/commons/commons-io-2.2.jar" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/gt-java-sdk-master/lib/java-json.jar" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/F2FPay_Demo_Java-1/TradePaySDK/lib/alipay-sdk-java-3.3.0.jar" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/F2FPay_Demo_Java-1/TradePaySDK/lib/commons-codec-1.10.jar" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/F2FPay_Demo_Java-1/TradePaySDK/lib/commons-configuration-1.10.jar" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/F2FPay_Demo_Java-1/TradePaySDK/lib/commons-lang-2.6.jar" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/F2FPay_Demo_Java-1/TradePaySDK/lib/commons-logging-1.1.1.jar" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/F2FPay_Demo_Java-1/TradePaySDK/lib/core-2.1.jar" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/F2FPay_Demo_Java-1/TradePaySDK/lib/gson-2.3.1.jar" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/F2FPay_Demo_Java-1/TradePaySDK/lib/hamcrest-core-1.3.jar" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/F2FPay_Demo_Java-1/TradePayDemo/classes/artifacts/TradePayDemo_jar/TradePayDemo.jar" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="Shop/web/Web" />

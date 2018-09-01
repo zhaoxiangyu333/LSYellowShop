@@ -276,6 +276,20 @@
         <servlet-name>AdminRecommendAction</servlet-name>
         <servlet-class>admin.action.admin.AdminRecommendAction</servlet-class>
     </servlet>
+    <!--获得支付宝回掉信息-->
+    <servlet>
+        <servlet-name>GetPayReply</servlet-name>
+        <servlet-class>user.action.GetPayReply</servlet-class>
+    </servlet>
+    <!--支付宝支付成功后清空数据库购物车为支付项目-->
+    <servlet>
+        <servlet-name>ClearCheckFinall</servlet-name>
+        <servlet-class>user.action.ClearCheckFinall</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteGoodsFromOrder</servlet-name>
+        <servlet-class>user.action.DeleteGoodsFromOrder</servlet-class>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>InitAction</servlet-name>
@@ -456,6 +470,19 @@
     <servlet-mapping>
         <servlet-name>AdminRecommendAction</servlet-name>
         <url-pattern>/AdminRecommendAction</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetPayReply</servlet-name>
+        <url-pattern>/GetPayReply</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteGoodsFromOrder</servlet-name>
+        <url-pattern>/DeleteGoodsFromOrder</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ClearCheckFinall</servlet-name>
+        <url-pattern>/ClearCheckFinall</url-pattern>
     </servlet-mapping>
 
     <welcome-file-list>

@@ -44,4 +44,8 @@ public class UserServlet {
     public List<Good> getRecommendGoods(int userId) {
         return new UserDao().getRecommendGoods(userId);
     }
+
+    public void deleteGoodsFromOrder(int removeId) {
+        new UserDao().deleteGoodsFromOrder(removeId);
+    }
 }

@@ -164,7 +164,7 @@
                 <div class="page type-page status-publish hentry">
                     <div class="entry-content">
                         <div class="woocommerce">
-
+                            <%--FIXME:支付宝接入--%>
                             <form name="checkout" method="post" class="checkout woocommerce-checkout"
                                   action="${pageContext.request.contextPath}/ClearCheck"
                                   id="checkout">
@@ -207,10 +207,11 @@
                                                     <abbr class="required" title="required">*</abbr>
                                                 </label>
 
-                                                    <div style="position: relative;">
-                                                        <input id="city-picker3" class="form-control input-text" readonly type="text"
-                                                           value="" data-toggle="city-picker" name="address_select" >
-                                                    </div>
+                                            <div style="position: relative;">
+                                                <input id="city-picker3" class="form-control input-text" readonly
+                                                       type="text"
+                                                       value="" data-toggle="city-picker" name="address_select">
+                                            </div>
                                             </p>
 
                                             <p class="form-row form-row form-row-wide address-field validate-required"
@@ -278,8 +279,9 @@
                                                 </td>
 
                                                 <td class="product-total">
-                                                <span class="woocommerce-Price-amount amount" sumSpan="orderSum"><span
-                                                        class="woocommerce-Price-currencySymbol">￥</span>${order.sum}</span>
+                                                <span class="woocommerce-Price-amount amount" sumSpan="orderSum" ><span
+                                                        class="woocommerce-Price-currencySymbol" >￥</span>${order.sum}</span>
+                                                    <input name="orderSumA" value="${order.sum}" hidden="hidden">
                                                 </td>
                                             </tr>
                                         </c:forEach>
@@ -944,7 +946,7 @@ ${pageContext.request.contextPath}/images/icons/bg_newsletter.jpg)">
                 alertInfo("请选择地区");
             }
 
-            if (($inputAddress.val() != "") &&($city_picker3.val() != "")) {
+            if (($inputAddress.val() != "") && ($city_picker3.val() != "")) {
                 $("#checkout").submit();
             }
         });
