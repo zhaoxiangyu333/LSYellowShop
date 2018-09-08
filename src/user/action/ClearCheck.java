@@ -1,16 +1,12 @@
 package user.action;
 
 import com.alipay.demo.trade.Main;
-import user.servlet.UserServlet;
-import user.vo.UserOrderGoods;
 
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.List;
 
 public class ClearCheck extends HttpServlet {
     @Override
@@ -23,18 +19,18 @@ public class ClearCheck extends HttpServlet {
         request.getSession().setAttribute("delivergoodaddress", billing_address_1);
         double orderSum = Double.parseDouble(request.getParameter("orderSumA"));
 
-        String paht =request.getServletContext().getRealPath("/");
+        String paht = request.getServletContext().getRealPath("/");
 
         Main main = new Main();
 
-        String imageoutput = main.test_trade_precreate(orderSum, paht+"images/2003");
+        String imageoutput = main.test_trade_precreate(orderSum, paht + "images/2003");
 
         int numL = imageoutput.indexOf("images/2003");
 
-        if (numL==-1){
-            request.setAttribute("getError","请求支付失败，请重新下单");
+        if (numL == -1) {
+            request.setAttribute("getError", "请求支付失败，请重新下单");
         } else {
-            imageoutput= imageoutput.substring(numL);
+            imageoutput = imageoutput.substring(numL);
 
         }
 

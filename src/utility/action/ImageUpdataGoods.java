@@ -10,7 +10,6 @@ import java.sql.SQLException;
 public class ImageUpdataGoods {
 	private Connection conn = null;
 	private PreparedStatement stat = null;
-	private ResultSet set = null;
 
 	public void updataImageUrl(int id, String pathUrl){
 		String sql  ="update `Shop`.`goods` set goods_image=? where goods_id=?";

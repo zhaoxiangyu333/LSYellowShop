@@ -62,15 +62,19 @@ public class LoginAction extends HttpServlet {
                 reUrl = "";
             } else if (reUrl.endsWith("/LoginOutAction")) {
                 reUrl = "";
+            } else if (reUrl.endsWith("/FirstSignUp")) {
+                reUrl = "";
             } else {
                 int num = reUrl.indexOf("/Shop/");
                 reUrl = reUrl.substring(num + 6);
             }
-
-
+//
+//
 //            if (reUrl.endsWith("8080/")) {
 //                reUrl = "";
 //            } else if (reUrl.endsWith("/LoginOutAction")) {
+//                reUrl = "";
+//            }else if (reUrl.endsWith("/FirstSignUp")){
 //                reUrl = "";
 //            } else {
 //                int num = reUrl.indexOf("8080/");
